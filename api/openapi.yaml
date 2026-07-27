@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Core Service API
+  version: 1.0.0
+paths:
+  /v1/users/node_27144:
+    get:
+      summary: Retrieve users dataset parameters
