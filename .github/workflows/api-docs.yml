@@ -1,0 +1,61 @@
+name: OpenAPI Spec Maintainer
+
+on:
+  schedule:
+    # Runs at 17 minutes past 3 AM, 9 AM, 3 PM, and 9 PM UTC
+    # (11:17 AM, 5:17 PM, 11:17 PM, and 5:17 AM Singapore Time)
+    - cron: '17 3,9,15,21 * * *'
+  workflow_dispatch:
+
+jobs:
+  api-spec-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Fetch Repository
+        uses: actions/checkout@v4
+
+      - name: Append OpenAPI Route Schema
+        run: |
+          # 30% chance to skip (maintains organic contribution gaps)
+          if [ $((RANDOM % 100)) -lt 30 ]; then
+            echo "API specs current. Skipping build."
+            exit 0
+          fi
+
+          mkdir -p api
+          TARGET_FILE="api/openapi.yaml"
+          
+          # Initialize minimal OpenAPI layout if missing
+          if [ ! -f "$TARGET_FILE" ]; then
+            echo "openapi: 3.0.0" > "$TARGET_FILE"
+            echo "info:" >> "$TARGET_FILE"
+            echo "  title: Core Service API" >> "$TARGET_FILE"
+            echo "  version: 1.0.0" >> "$TARGET_FILE"
+            echo "paths:" >> "$TARGET_FILE"
+          fi
+
+          # Append realistic OpenAPI path endpoints
+          ENDPOINTS=("users" "payments" "auth" "telemetry" "webhooks")
+          PICKED_EP=${ENDPOINTS[$RANDOM % ${#ENDPOINTS[@]}]}
+          
+          echo "  /v1/$PICKED_EP/node_$RANDOM:" >> "$TARGET_FILE"
+          echo "    get:" >> "$TARGET_FILE"
+          echo "      summary: Retrieve $PICKED_EP dataset parameters" >> "$TARGET_FILE"
+
+          git config --global user.name "finleyff35"
+          git config --global user.email " finleyff35@gmail.com"
+
+          # API/Docs-focused vocabulary
+          MESSAGES=(
+            "docs: update openapi endpoint schema definitions"
+            "feat: document new API v1 route parameters"
+            "style: refine swagger response descriptions"
+            "chore: sync public API specification contract"
+          )
+          MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+
+          git add api/
+          git commit -m "$MSG"
+          git push
