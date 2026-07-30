@@ -21,3 +21,6 @@ paths:
   /v1/webhooks/node_29568:
     get:
       summary: Retrieve webhooks dataset parameters
+  /v1/telemetry/node_13042:
+    get:
+      summary: Retrieve telemetry dataset parameters
