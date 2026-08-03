@@ -57,3 +57,6 @@ paths:
   /v1/payments/node_7285:
     get:
       summary: Retrieve payments dataset parameters
+  /v1/telemetry/node_16358:
+    get:
+      summary: Retrieve telemetry dataset parameters
