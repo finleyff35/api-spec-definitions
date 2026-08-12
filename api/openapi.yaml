@@ -138,3 +138,6 @@ paths:
   /v1/users/node_30050:
     get:
       summary: Retrieve users dataset parameters
+  /v1/auth/node_13838:
+    get:
+      summary: Retrieve auth dataset parameters
