@@ -156,3 +156,6 @@ paths:
   /v1/webhooks/node_10060:
     get:
       summary: Retrieve webhooks dataset parameters
+  /v1/webhooks/node_24653:
+    get:
+      summary: Retrieve webhooks dataset parameters
