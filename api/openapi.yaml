@@ -186,3 +186,6 @@ paths:
   /v1/payments/node_19103:
     get:
       summary: Retrieve payments dataset parameters
+  /v1/auth/node_11074:
+    get:
+      summary: Retrieve auth dataset parameters
