@@ -240,3 +240,6 @@ paths:
   /v1/telemetry/node_25882:
     get:
       summary: Retrieve telemetry dataset parameters
+  /v1/auth/node_1137:
+    get:
+      summary: Retrieve auth dataset parameters
