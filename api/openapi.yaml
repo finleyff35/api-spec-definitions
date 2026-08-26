@@ -243,3 +243,6 @@ paths:
   /v1/auth/node_1137:
     get:
       summary: Retrieve auth dataset parameters
+  /v1/auth/node_18641:
+    get:
+      summary: Retrieve auth dataset parameters
