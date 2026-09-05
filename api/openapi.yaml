@@ -315,3 +315,6 @@ paths:
   /v1/payments/node_12902:
     get:
       summary: Retrieve payments dataset parameters
+  /v1/webhooks/node_2495:
+    get:
+      summary: Retrieve webhooks dataset parameters
