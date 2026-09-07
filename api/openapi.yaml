@@ -330,3 +330,6 @@ paths:
   /v1/users/node_23588:
     get:
       summary: Retrieve users dataset parameters
+  /v1/auth/node_23658:
+    get:
+      summary: Retrieve auth dataset parameters
