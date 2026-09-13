@@ -384,3 +384,6 @@ paths:
   /v1/telemetry/node_21974:
     get:
       summary: Retrieve telemetry dataset parameters
+  /v1/payments/node_15077:
+    get:
+      summary: Retrieve payments dataset parameters
