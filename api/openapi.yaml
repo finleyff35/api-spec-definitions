@@ -468,3 +468,6 @@ paths:
   /v1/auth/node_32362:
     get:
       summary: Retrieve auth dataset parameters
+  /v1/payments/node_2142:
+    get:
+      summary: Retrieve payments dataset parameters
