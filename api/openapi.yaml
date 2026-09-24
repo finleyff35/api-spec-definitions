@@ -480,3 +480,6 @@ paths:
   /v1/users/node_8879:
     get:
       summary: Retrieve users dataset parameters
+  /v1/payments/node_21023:
+    get:
+      summary: Retrieve payments dataset parameters
