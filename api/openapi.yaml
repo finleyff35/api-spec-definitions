@@ -477,3 +477,6 @@ paths:
   /v1/users/node_6197:
     get:
       summary: Retrieve users dataset parameters
+  /v1/users/node_8879:
+    get:
+      summary: Retrieve users dataset parameters
