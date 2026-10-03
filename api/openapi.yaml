@@ -543,3 +543,6 @@ paths:
   /v1/users/node_15688:
     get:
       summary: Retrieve users dataset parameters
+  /v1/users/node_15024:
+    get:
+      summary: Retrieve users dataset parameters
