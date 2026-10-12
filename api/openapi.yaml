@@ -597,3 +597,6 @@ paths:
   /v1/telemetry/node_21380:
     get:
       summary: Retrieve telemetry dataset parameters
+  /v1/telemetry/node_12347:
+    get:
+      summary: Retrieve telemetry dataset parameters
