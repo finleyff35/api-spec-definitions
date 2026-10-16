@@ -633,3 +633,6 @@ paths:
   /v1/users/node_25682:
     get:
       summary: Retrieve users dataset parameters
+  /v1/telemetry/node_25073:
+    get:
+      summary: Retrieve telemetry dataset parameters
