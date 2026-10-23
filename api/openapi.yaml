@@ -675,3 +675,6 @@ paths:
   /v1/auth/node_24587:
     get:
       summary: Retrieve auth dataset parameters
+  /v1/webhooks/node_10775:
+    get:
+      summary: Retrieve webhooks dataset parameters
