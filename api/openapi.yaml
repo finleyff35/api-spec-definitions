@@ -759,3 +759,6 @@ paths:
   /v1/users/node_2404:
     get:
       summary: Retrieve users dataset parameters
+  /v1/webhooks/node_609:
+    get:
+      summary: Retrieve webhooks dataset parameters
