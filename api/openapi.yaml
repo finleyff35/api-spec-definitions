@@ -774,3 +774,6 @@ paths:
   /v1/users/node_17746:
     get:
       summary: Retrieve users dataset parameters
+  /v1/auth/node_11039:
+    get:
+      summary: Retrieve auth dataset parameters
