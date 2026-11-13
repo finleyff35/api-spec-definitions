@@ -801,3 +801,6 @@ paths:
   /v1/auth/node_8086:
     get:
       summary: Retrieve auth dataset parameters
+  /v1/auth/node_30885:
+    get:
+      summary: Retrieve auth dataset parameters
