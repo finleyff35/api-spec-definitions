@@ -813,3 +813,6 @@ paths:
   /v1/telemetry/node_14463:
     get:
       summary: Retrieve telemetry dataset parameters
+  /v1/users/node_16051:
+    get:
+      summary: Retrieve users dataset parameters
