@@ -822,3 +822,6 @@ paths:
   /v1/telemetry/node_23893:
     get:
       summary: Retrieve telemetry dataset parameters
+  /v1/auth/node_29472:
+    get:
+      summary: Retrieve auth dataset parameters
