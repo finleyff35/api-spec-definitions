@@ -831,3 +831,6 @@ paths:
   /v1/payments/node_13131:
     get:
       summary: Retrieve payments dataset parameters
+  /v1/users/node_11312:
+    get:
+      summary: Retrieve users dataset parameters
